@@ -1,0 +1,293 @@
+
+
+
+
+
+ .container-hex{
+
+    position: absolute;
+    height: 55vh;
+    width: 0vh;
+    overflow: hidden;
+    animation: animate 3s ease-in-out;
+    background: none;
+    margin-left: 210px;
+    margin-top: 315px;
+    z-index: 22;
+    border-radius: 20px;
+    opacity: 0;
+    
+ }
+
+
+
+ @keyframes animate{
+
+    0%{
+
+        width: 128vh;
+        opacity: 1;
+    }
+    
+    90%{
+
+        height: 55vh;
+    }
+    
+    100%{
+        
+        width: 128vh;
+        height: 0vh;
+        opacity: 1;
+    }
+ }
+
+
+
+
+ .row{
+
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
+ }
+
+
+ .row:nth-child(even){
+
+    margin-left: -16px;
+ }
+
+
+
+
+ 
+
+
+
+
+.hexagon{
+
+    position: relative;
+    width: 70px;
+    height: 80px;
+    background: linear-gradient(to right ,#ffeeb3 , #ffe68e);
+    margin: 6px -1px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: 2s;
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
+
+div .row-2 .hexagon:nth-child(even){
+
+    animation: even-change-color .40s linear infinite;
+}
+div .row-3 .hexagon:nth-child(even){
+
+    animation: even-change-color .40s linear infinite;
+}
+div .row-4 .hexagon:nth-child(even){
+
+    animation: even-change-color .40s linear infinite;
+}
+div .row-5 .hexagon:nth-child(even){
+
+    animation: even-change-color .40s linear infinite;
+}
+
+
+
+
+div .row-22 .hexagon:nth-child(even){
+
+    animation: even-change-color2 .40s linear infinite;
+}
+div .row-33 .hexagon:nth-child(even){
+
+    animation: even-change-color2 .40s linear infinite;
+}
+div .row-44 .hexagon:nth-child(even){
+
+    animation: even-change-color2 .40s linear infinite;
+}
+div .row-55 .hexagon:nth-child(even){
+
+    animation: even-change-color2 .40s linear infinite;
+}
+
+
+
+
+div .row-2 .hexagon:nth-child(odd){
+
+    animation: even-change-color2 .60s linear infinite;
+}
+div .row-3 .hexagon:nth-child(odd){
+
+    animation: even-change-color2 .60s linear infinite;
+}
+div .row-4 .hexagon:nth-child(odd){
+
+    animation: even-change-color2 .60s linear infinite;
+}
+div .row-5 .hexagon:nth-child(odd){
+
+    animation: even-change-color2 .60s linear infinite;
+}
+
+
+
+
+div .row-22 .hexagon:nth-child(odd){
+
+    animation: even-change-color .60s linear infinite;
+}
+div .row-33 .hexagon:nth-child(odd){
+
+    animation: even-change-color .60s linear infinite;
+}
+div .row-44 .hexagon:nth-child(odd){
+
+    animation: even-change-color .60s linear infinite;
+}
+div .row-55 .hexagon:nth-child(odd){
+
+    animation: even-change-color .60s linear infinite;
+}
+
+
+
+
+
+
+@keyframes even-change-color{
+
+    0%{
+
+        background: #ffea9e;
+    }
+    20%{
+
+        background: #ffe68d;
+    }
+    40%{
+
+        background: #fff0b9;
+    }
+    100%{
+
+        background: #ffea9e;
+    }
+}
+
+@keyframes even-change-color2{
+
+    0%{
+
+        background: #ffea9e;
+    }
+    50%{
+
+        background: #ffdf88;
+    }
+    100%{
+
+        background: #ffea9e;
+    }
+}
+
+
+
+
+
+.hexagon:hover{
+
+    transition: 0s;
+    background: #ffe588;
+    opacity: 1;
+}
+
+
+
+
+ /* .hexagon::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    background: #ffefb6;
+    opacity: 1;
+} */
+
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 720px){
+
+
+    .container-hex{
+
+        position: absolute;
+        height: 55vh;
+        width: 0vh;
+        overflow: hidden;
+        animation: animate 3s ease-in-out;
+        background: none;
+        margin-left: 210px;
+        margin-top: 271px;
+        z-index: 22;
+        border-radius: 20px;
+        opacity: 0;
+        
+     }
+    
+    
+    
+     @keyframes animate{
+    
+        0%{
+    
+            width: 82vh;
+            opacity: 1;
+        }
+        
+        90%{
+    
+            height: 55vh;
+        }
+        
+        100%{
+            
+            width: 82vh;
+            height: 0vh;
+            opacity: 1;
+        }
+     }
+    
+    
+}
+
+
+
+
+@media only screen and (max-width: 360px) and (min-width: 240px) {
+
+
+    .container-hex{
+
+        display: none;
+     }
+}

@@ -1,0 +1,44 @@
+
+
+
+
+body{
+
+    overflow: hidden;
+}
+
+
+
+ canvas{
+
+    position: absolute;
+    
+    height: 100vh;
+    width: 199px;
+    top: 0px;
+    z-index: 22;
+    background: #ff000000;
+    left: 0px;
+ }
+
+
+
+ .dg.ac{
+
+    display: none;
+ }
+
+
+
+
+
+
+ @media only screen and (max-width: 360px) and (min-width: 240px) {
+
+   canvas{
+
+      width: 200px;
+      height: 410px;
+      z-index: 1;
+   }
+ }
